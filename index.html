@@ -200,6 +200,66 @@ footer p { font-size: 12px; line-height: 1.8; }
 .fade-in-8 { animation-delay: 0.54s; }
 .fade-in-9 { animation-delay: 0.60s; }
 .fade-in-10 { animation-delay: 0.66s; }
+
+
+/* Dark Mode Variables */
+html.dark-mode {
+  --bg: #131316 !important;
+  --surface: #1e1e26 !important;
+  --text-primary: #e8e8ed !important;
+  --text-secondary: #a0a0b0 !important;
+  --text-muted: #6b6b7a !important;
+  --border: #33333d !important;
+  --shadow-lg: 0 10px 30px -8px rgba(0,0,0,0.40), 0 4px 10px rgba(0,0,0,0.25) !important;
+}
+html.dark-mode header,
+html.dark-mode nav,
+html.dark-mode .news-card,
+html.dark-mode .featured-side article,
+html.dark-mode .col,
+html.dark-mode footer {
+  background: var(--surface) !important;
+}
+html.dark-mode .top-bar { background: #6b1515 !important; }
+html.dark-mode .card-img { background: #25252b !important; }
+html.dark-mode .weather { background: #1a1a22 !important; color: #c0c0d0 !important; }
+html.dark-mode .col-list li a { border-bottom-color: #33333d !important; }
+html.dark-mode .col-list li a:hover { color: #e53e3e !important; }
+html.dark-mode footer { border-top: 1px solid #33333d !important; }
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.3); }
+
+/* Ticker pause on hover */
+.top-bar .ticker:hover span { animation-play-state: paused !important; }
+
+/* Card image zoom on hover */
+.news-card { overflow: hidden; }
+.news-card .card-img { transition: transform 0.4s ease; }
+.news-card:hover .card-img { transform: scale(1.08); }
+
 </style>
 </head>
 <body>
