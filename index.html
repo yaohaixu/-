@@ -209,13 +209,13 @@ footer p { font-size: 12px; line-height: 1.8; }
   </div>
 </header>
 <nav><ul>
-  <li><a href="#" class="active">头条</a></li>
-  <li><a href="#">时政</a></li>
-  <li><a href="#">国际</a></li>
-  <li><a href="#">财经</a></li>
-  <li><a href="#">科技</a></li>
-  <li><a href="#">体育</a></li>
-  <li><a href="#">文化</a></li>
+  <li><a href="javascript:void(0)" class="tab-link active" data-tab="toutiao">头条</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="shizheng">时政</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="guoji">国际</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="caijing">财经</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="keji">科技</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="tiyu">体育</a></li>
+  <li><a href="javascript:void(0)" class="tab-link" data-tab="wenhua">文化</a></li>
 </ul></nav>
 <main>
   <div class="date-banner fade-in">
@@ -223,7 +223,7 @@ footer p { font-size: 12px; line-height: 1.8; }
     <div class="sub">2026年6月5日 · 更新于 09:00</div>
   </div>
 
-  <div class="featured">
+  <div class="featured" data-category="toutiao">
     <a href="https://www.bbc.com/news/articles/cwy2ypyp4x4o" target="_blank" rel="noopener" class="featured-main fade-in fade-in-1">
       <div class="globe-wrap"><div class="globe">🌍</div></div>
       <div class="content">
@@ -252,8 +252,8 @@ footer p { font-size: 12px; line-height: 1.8; }
     </div>
   </div>
 
-  <div class="section-header fade-in fade-in-3">
-    <h3>时政 · 要闻</h3>
+  <div class="section-header fade-in fade-in-3" data-category="shizheng">
+    <h3 data-category="shizheng">时政 · 要闻</h3>
     <a href="#" class="more">查看更多 →</a>
   </div>
   <div class="news-grid">
@@ -286,11 +286,11 @@ footer p { font-size: 12px; line-height: 1.8; }
     </a>
   </div>
 
-  <div class="section-header fade-in fade-in-5">
-    <h3>国际 · 视野</h3>
+  <div class="section-header fade-in fade-in-5" data-category="guoji">
+    <h3 data-category="guoji">国际 · 视野</h3>
     <a href="#" class="more">查看更多 →</a>
   </div>
-  <div class="news-grid">
+  <div class="news-grid" data-category="shizheng">
     <a href="https://www.wsj.com/articles/palestinians-flock-back-to-northern-gaza-on-foot-after-hostage-release-breakthrough-3f60e2db" target="_blank" rel="noopener" class="news-card fade-in fade-in-5">
       <div class="card-img">🇵🇸</div>
       <div class="card-body">
@@ -320,11 +320,11 @@ footer p { font-size: 12px; line-height: 1.8; }
     </a>
   </div>
 
-  <div class="section-header fade-in fade-in-6">
-    <h3>财经 · 市场</h3>
+  <div class="section-header fade-in fade-in-6" data-category="caijing">
+    <h3 data-category="caijing">财经 · 市场</h3>
     <a href="#" class="more">查看更多 →</a>
   </div>
-  <div class="news-grid">
+  <div class="news-grid" data-category="guoji">
     <a href="https://www.bloomberg.com/news/articles/2026-06-04/gold-steadies-as-uncertainty-surrounds-progress-in-us-iran-talks" target="_blank" rel="noopener" class="news-card fade-in fade-in-6">
       <div class="card-img">🥇</div>
       <div class="card-body">
@@ -354,11 +354,11 @@ footer p { font-size: 12px; line-height: 1.8; }
     </a>
   </div>
 
-  <div class="section-header fade-in fade-in-7">
-    <h3>科技 · 前沿</h3>
+  <div class="section-header fade-in fade-in-7" data-category="keji">
+    <h3 data-category="keji">科技 · 前沿</h3>
     <a href="#" class="more">查看更多 →</a>
   </div>
-  <div class="news-grid">
+  <div class="news-grid" data-category="caijing">
     <a href="https://techcrunch.com/2026/06/04/founders-fund-launches-game-show-starring-sam-altman-palmer-luckey-and-other-tech-elites/" target="_blank" rel="noopener" class="news-card fade-in fade-in-7">
       <div class="card-img">🎮</div>
       <div class="card-body">
@@ -388,9 +388,9 @@ footer p { font-size: 12px; line-height: 1.8; }
     </a>
   </div>
 
-  <div class="two-col">
+  <div class="two-col" data-category="tiyu wenhua">
     <div class="col fade-in fade-in-8">
-      <div class="col-header"><span class="dot red"></span><h4>体育 ⚽</h4></div>
+      <div class="col-header" data-category="tiyu"><span class="dot red"></span><h4 data-category="tiyu">体育 ⚽</h4></div>
       <ul class="col-list">
         <li><a href="https://www.bbc.com/sport/tennis/articles/cp8p8n1npyeo" target="_blank" rel="noopener"><span class="badge hot">热</span>法国网球公开赛：黑马选手携纹身信念闯入决赛创个人最佳</a></li>
         <li><a href="https://www.bbc.com/sport/football/articles/cqjpkgx7084o" target="_blank" rel="noopener"><span class="badge new">新</span>英超：伊拉奥拉表示已为执教利物浦做好准备</a></li>
@@ -399,7 +399,7 @@ footer p { font-size: 12px; line-height: 1.8; }
       </ul>
     </div>
     <div class="col fade-in fade-in-9">
-      <div class="col-header"><span class="dot blue"></span><h4>文化 · 生活 🎭</h4></div>
+      <div class="col-header" data-category="wenhua"><span class="dot blue"></span><h4 data-category="wenhua">文化 · 生活 🎭</h4></div>
       <ul class="col-list">
         <li><a href="https://www.npr.org/2026/06/04/nx-s1-5846797/new-york-city-transit-metro-mta-world-cup-nba-finals" target="_blank" rel="noopener"><span class="badge top">荐</span>纽约市改造公共交通系统以应对世界杯和NBA总决赛人流</a></li>
         <li><a href="https://www.nytimes.com/2026/06/04/world/europe/ireland-defense.html" target="_blank" rel="noopener">爱尔兰——被视为欧洲防务薄弱环节——正努力加强军备</a></li>
@@ -409,11 +409,11 @@ footer p { font-size: 12px; line-height: 1.8; }
     </div>
   </div>
 
-  <div class="section-header fade-in fade-in-9">
-    <h3>更多 · 深度</h3>
+  <div class="section-header fade-in fade-in-9" data-category="wenhua">
+    <h3 data-category="wenhua">更多 · 深度</h3>
     <a href="#" class="more">查看更多 →</a>
   </div>
-  <div class="news-grid">
+  <div class="news-grid" data-category="keji">
     <a href="https://www.npr.org/2026/06/04/nx-s1-5846943/public-health-mandates-limits" target="_blank" rel="noopener" class="news-card fade-in fade-in-8">
       <div class="card-img">🏥</div>
       <div class="card-body"><span class="tag world">公共健康</span><h4>多国削弱公共卫生权力 疫情暴发风险上升</h4><p class="summary">一些司法管辖区因应此前封控措施的批评而削弱了公共卫生部门权限，专家警告这增加了未来疫情暴发时的应对风险。</p><div class="card-meta"><span class="source">NPR</span><span>2 小时前</span></div></div>
@@ -434,5 +434,45 @@ footer p { font-size: 12px; line-height: 1.8; }
     <p>© 2026 今日新闻 &nbsp;·&nbsp; 新闻来源：BBC, NYT, WSJ, NPR, Bloomberg, CNBC, TechCrunch<br>点击每篇报道可跳转至原始页面 · 本站仅为新闻聚合展示</p>
   </div>
 </footer>
+
+<script>
+// Tab switching functionality
+function switchTab(tab) {
+  // Update nav active state
+  document.querySelectorAll('.tab-link').forEach(el => {
+    el.classList.remove('active');
+  });
+  document.querySelector(`.tab-link[data-tab="${tab}"]`).classList.add('active');
+  
+  // Get all content sections
+  const sections = document.querySelectorAll('.section-header, .news-grid, .featured, .two-col');
+  
+  // Show/hide with animation
+  sections.forEach(el => {
+    const cats = el.dataset.category ? el.dataset.category.split(' ') : [];
+    
+    if (tab === 'toutiao' || cats.includes(tab)) {
+      // Show
+      el.style.display = '';
+      el.classList.remove('fade-out');
+      el.classList.add('fade-in');
+    } else {
+      // Hide with animation
+      el.classList.add('fade-out');
+      el.classList.remove('fade-in');
+      setTimeout(() => { el.style.display = 'none'; }, 200);
+    }
+  });
+}
+
+// Attach click handlers
+document.querySelectorAll('.tab-link').forEach(el => {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    switchTab(this.dataset.tab);
+  });
+});
+</script>
+
 </body>
 </html>
